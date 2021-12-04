@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
+
+.para1 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Teko", sans-serif;
+  font-size: 5vh;
+  padding: 0 20vh;
+}
+
+.vid1 {
+  position: relative;
+  width: 100%;
+  padding-bottom: 45%;
+  height: 0;
+}
+.vid1 iframe {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
