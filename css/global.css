@@ -41,3 +41,71 @@ body {
 .non-active {
   color: #656565;
 }
+
+.hamburger {
+  display: none;
+  float: right;
+}
+
+.row {
+  display: block;
+  width: 36px;
+  height: 4.2px;
+  background-color: white;
+  margin-top: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 1415px) {
+  .nav {
+    position: fixed;
+    margin-top: -300%;
+    width: 100%;
+    -webkit-transition: all 0.5s ease-in-out;
+  }
+
+  .hamburger {
+    display: block;
+    margin-top: -10vh;
+    margin-right: 0px;
+  }
+
+  .nav a {
+    margin-top: 20px;
+  }
+
+  .nav.active {
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    float: right;
+    background-color: white;
+    -webkit-transition: all 0.5s ease-in-out;
+  }
+
+  .active-page {
+    color: black;
+  }
+
+  .row1.active,
+  .row3.active {
+    background-color: black;
+  }
+
+  .row {
+    -webkit-transition: all 0.5s ease-in-out;
+  }
+}
+
+.hamburger.active .row:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .row:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .row:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
