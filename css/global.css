@@ -103,6 +103,34 @@ body {
   }
 }
 
+.socials {
+  margin-top: 10vh;
+  align-items: center;
+  text-align: center;
+}
+
+.favi {
+  height: 5%;
+  width: 5%;
+  align-items: center;
+  padding: 0 10vh;
+}
+
+.author {
+  font-family: "Teko", sans-serif;
+  color: white;
+  text-align: right;
+  font-size: 4vh;
+  margin-bottom: -5vh;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .socials {
+    display: none;
+  }
+}
+
 .hamburger.active .row:nth-child(2) {
   opacity: 0;
 }

@@ -8,18 +8,107 @@
   padding: 0 20vh;
 }
 
-.vid1 {
-  position: relative;
-  width: 100%;
-  padding-bottom: 45%;
-  height: 0;
+.chonk {
+  margin-top: 10vh;
+  margin-left: 60%;
+  width: 30%;
+  height: 30%;
 }
-.vid1 iframe {
-  position: absolute;
-  top: 0;
-  left: 10%;
-  width: 80%;
-  height: 80%;
+
+.knowh4 {
+  position: block;
+  color: #ffffff;
+  text-align: left;
+  font-family: "Teko", sans-serif;
+  font-size: 10vh;
+  margin-top: -30%;
+  margin-left: 20vh;
+}
+
+#more {
+  display: none;
+}
+
+.knowuspara,
+.flet {
+  font-family: "Teko", sans-serif;
+  color: white;
+  font-size: 4.5vh;
+  margin-left: 20vh;
+}
+
+.knowuspara {
+  margin-top: -3vh;
+  margin-right: 50%;
+}
+
+.rmbtt {
+  background-color: black;
+  color: #656565;
+  margin-left: 20vh;
+  font-family: "Teko", sans-serif;
+  font-size: 3vh;
+}
+
+.ourvids {
+  margin-top: 10vh;
+}
+
+.ourvid {
+  font-family: "Teko", sans-serif;
+  font-size: 7vh;
+  color: white;
+  text-align: center;
+}
+
+.cmsoon {
+  font-family: "Teko", sans-serif;
+  font-size: 10vh;
+  color: white;
+  text-align: center;
+}
+
+.join {
+  margin-top: 10vh;
+}
+
+.joinhead {
+  font-family: "Teko", sans-serif;
+  font-size: 7vh;
+  color: white;
+  text-align: center;
+}
+
+.joinbody {
+  font-family: "Teko", sans-serif;
+  font-size: 5vh;
+  color: white;
+  margin: 0 5vh;
+  text-align: center;
+}
+
+.apply {
+  font-family: "Teko", sans-serif;
+  text-align: center;
+  font-size: 6vh;
+}
+
+.apply a {
+  border: 3px solid white;
+  color: black;
+}
+
+.apply a:hover,
+.apply a:link,
+.apply a:visited,
+.apply a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.apply a:hover {
+  background-color: white;
+  color: black;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -31,11 +120,59 @@
     font-size: 6vw;
     padding: 0 15vh;
   }
+
+  .knowh4 {
+    font-size: 8vh;
+    margin-left: 15vh;
+  }
+
+  .knowuspara,
+  .flet {
+    font-size: 3vw;
+    margin-left: 15vh;
+  }
+
+  .rmbtt {
+    margin-left: 15vh;
+  }
+
+  .joinbody {
+    margin-left: 15vh;
+  }
 }
 
 @media only screen and (max-width: 900px) {
   .para1 {
     font-size: 4vh;
     padding: 0 13vw;
+  }
+
+  .knowh4 {
+    font-size: 7vh;
+    margin-left: 13vw;
+  }
+
+  .knowuspara,
+  .flet {
+    margin-left: 13vw;
+  }
+  .rmbtt {
+    margin-left: 13vw;
+  }
+  .joinbody {
+    margin-left: 13vw;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .knowuspara {
+    margin-top: -7vh;
+    font-size: 4vh;
+    margin-right: 44%;
+  }
+
+  .flet {
+    margin-top: -4vh;
+    font-size: 4vh;
   }
 }
