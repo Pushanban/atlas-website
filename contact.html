@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css"> 
+    <link rel="stylesheet" href="./css/contact.css">
+    <title>Contact | ATLAS</title>
+</head>
+<body>
+    <div class="bodytitle">ATLAS</div>
+    <div class="nav-container">
+        <div class="nav">
+            <a href="" class="non-active">MUSIC</a>
+            <a href="/contact.html" class="active-page">CONTACT</a>
+            <a href="/" class="non-active">HOME</a>
+            <a href="" class="non-active">STORE</a>
+            <a href="" class="non-active">ABOUT US</a>
+        </div>
+        <div class="hamburger">
+            <span class="row row1"></span>
+            <span class="row row2"></span>
+            <span class="row row3"></span>
+        </div>
+    </div>
+    <div class="newletter">
+        <p class="on">OUR NEWSLETTER</p>
+        <form name="submit-to-google-sheet">
+            <input name="email" type="email" placeholder="Email" class="inputbox" required>
+            <button type="submit" class="submit">Submit</button>
+          </form>
+          
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz5XCC8dEeHQz2NW9t78VOhrSUNKevcdVaF2vOEpgJCppzdvdA/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </div>
+    <div class="socials">
+        <a href=""><img class="favi" src="./media/img/favicon/youtube.png" alt=""></a>
+        <a href=""><img class="favi" src="./media/img/favicon/twitter.png" alt=""></a>
+        <a href=""><img class="favi" src="./media/img/favicon/discord.png" alt=""></a>
+        <a href=""><img class="favi" src="./media/img/favicon/instagram.png" alt=""></a>
+        <a href=""><img class="favi" src="./media/img/favicon/spotify.png" alt=""></a>
+    </div>
+    <a target="_blank" href="https://linktr.ee/atlasmis"><button class="linktree">Our Socials</button></a>
+    <footer>
+        <p class="author">Made With ❤️ By Pushan Banerjee</p>
+    </footer>
+    <script src="./media/js/nav.js"></script>
+</body>
+</html>
