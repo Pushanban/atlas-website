@@ -157,10 +157,6 @@ a:hover,
   right: 1vh;
 }
 @media only screen and (max-width: 1000px) {
-  .hamburger {
-    margin-top: -3vh;
-  }
-
   .para1 {
     font-size: 6vw;
     padding: 0 15vh;

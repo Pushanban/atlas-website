@@ -4,6 +4,7 @@ const row1 = document.querySelector(".row1")
 const row3 = document.querySelector(".row3")
 const linktree = document.querySelector(".linktree")
 const author = document.querySelector(".author")
+const submit = document.querySelector(".submit")
 
 hamburger.addEventListener("click", mobileMenu);
 
@@ -14,6 +15,7 @@ function mobileMenu() {
     row3.classList.toggle("active");
     linktree.classList.toggle("active")
     author.classList.toggle("active")
+    submit.classList.toggle("active")
 }
 
 const navLink = document.querySelectorAll(".nav a");
@@ -27,4 +29,5 @@ function closeMenu() {
     row3.classList.remove("active");
     linktree.classList.remove("active")
     author.classList.remove("active")
+    submit.classList.remove("active")
 }

@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="./css/global.css"> 
     <link rel="stylesheet" href="./css/contact.css">
     <title>Contact | ATLAS</title>
+    <link rel="icon" href="./media/img/ATLAS Logo Final with bg.png" type="image/x-icon">
 </head>
 <body>
     <div class="bodytitle">ATLAS</div>
     <div class="nav-container">
         <div class="nav">
-            <a href="" class="non-active">MUSIC</a>
-            <a href="/contact.html" class="active-page">CONTACT</a>
-            <a href="/" class="non-active">HOME</a>
-            <a href="" class="non-active">STORE</a>
-            <a href="" class="non-active">ABOUT US</a>
+            <a href="./soon.html" class="non-active">MUSIC</a>
+            <a href="./contact.html" class="active-page">CONTACT</a>
+            <a href="./index.html" class="non-active">HOME</a>
+            <a href="./soon.html" class="non-active">STORE</a>
+            <a href="./index.html#about" class="non-active">ABOUT US</a>
         </div>
         <div class="hamburger">
             <span class="row row1"></span>
@@ -29,26 +30,33 @@
         <form name="submit-to-google-sheet">
             <input name="email" type="email" placeholder="Email" class="inputbox" required>
             <button type="submit" class="submit">Submit</button>
-          </form>
-          
-          <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbz5XCC8dEeHQz2NW9t78VOhrSUNKevcdVaF2vOEpgJCppzdvdA/exec'
-            const form = document.forms['submit-to-google-sheet']
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
+        </form> 
+        <p class="loled">
+            Get updates about our recent uploads, tabs, 
+            tracks via signing up for our newsletter and
+            get be notified about us immediately!
+        </p>
+        <p class="mailmoment">
+            Email For Support: inquiries.atlasmis@gmail.com
+        </p>
     </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz5XCC8dEeHQz2NW9t78VOhrSUNKevcdVaF2vOEpgJCppzdvdA/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
     <div class="socials">
-        <a href=""><img class="favi" src="./media/img/favicon/youtube.png" alt=""></a>
-        <a href=""><img class="favi" src="./media/img/favicon/twitter.png" alt=""></a>
-        <a href=""><img class="favi" src="./media/img/favicon/discord.png" alt=""></a>
-        <a href=""><img class="favi" src="./media/img/favicon/instagram.png" alt=""></a>
-        <a href=""><img class="favi" src="./media/img/favicon/spotify.png" alt=""></a>
+        <a href="https://www.youtube.com/channel/UCceFKnitQaCV6tsq1hd9FQg"><img class="favi" src="./media/img/favicon/youtube.png" alt=""></a>
+        <a href="https://twitter.com/AtlasOfficial4"><img class="favi" src="./media/img/favicon/twitter.png" alt=""></a>
+        <a href="https://discord.com/invite/gEfsACNDD5"><img class="favi" src="./media/img/favicon/discord.png" alt=""></a>
+        <a href="https://www.instagram.com/atlasmisofficial/"><img class="favi" src="./media/img/favicon/instagram.png" alt=""></a>
+        <a href="./soon.html"><img class="favi" src="./media/img/favicon/spotify.png" alt=""></a>
     </div>
     <a target="_blank" href="https://linktr.ee/atlasmis"><button class="linktree">Our Socials</button></a>
     <footer>
