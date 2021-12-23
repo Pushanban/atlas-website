@@ -66,6 +66,25 @@
   border: 1px solid white;
 }
 
+.submit.active {
+  display: none;
+}
+
+.loled {
+  margin-top: 3vh;
+  font-family: "Space Mono", monospace;
+  color: white;
+  text-align: center;
+  font-size: 3vh;
+}
+
+.mailmoment {
+  font-family: "Space Mono", monospace;
+  color: white;
+  text-align: center;
+  font-size: 3 vh;
+}
+
 @media only screen and (max-width: 900px) {
   .linktree {
     display: block;
@@ -93,5 +112,14 @@
     border: 1px solid white;
     background-color: black;
     color: white;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .loled {
+    font-size: 2.5vh;
+  }
+  .mailmoment {
+    font-size: 2.5 vh;
   }
 }
